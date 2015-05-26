@@ -1,4 +1,4 @@
-# is-hybrid [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
+# is-hybrid [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url]
 
 > Check whether an object looks like Hybrid which is promises-a+ promise and callback api
 
@@ -16,13 +16,37 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
+var gotPromise = require('got-promise')
+var isPromise = require('is-promise')
+var gotHybrid = require('then-got')
 var isHybrid = require('is-hybrid')
+var assert = require('assert')
+
+var hybrid = gotHybrid('https://github.com')
+var promise = gotPromise('https://github.com')
+
+assert(isHybrid(hybrid))
+assert(isPromise(hybrid))
+assert(isPromise(promise))
+assert(!isHybrid(promise))
+assert(!isHybrid(null))
+assert(!isHybrid('foo'))
+assert(!isHybrid(123))
+assert(!isHybrid({foo: 'bar'}))
+assert(!isHybrid([1, 2, 3, 4]))
+assert(!isHybrid(undefined))
+assert(!isHybrid(Object))
+assert(!isHybrid(Function))
+assert(!isHybrid(function () {}))
+
+console.log('tests pass')
+//=> tests pass
 ```
 
 
 ## Contributing
 
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/hybridables/is-hybrid/issues/new).  
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/hybridables/is-hybrid/issues/new).
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
 
