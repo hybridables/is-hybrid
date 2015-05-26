@@ -1,0 +1,22 @@
+{
+  "name": "is-hybrid",
+  "version": "0.0.0",
+  "description": "Check whether an object looks like Hybrid which is promises-a+ promise and callback api",
+  "repository": "hybridables/is-hybrid",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "is-promise": "^2.0.0"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "bluebird": "^2.9.26",
+    "got-promise": "^4.1.0",
+    "then-got": "^1.0.7"
+  },
+  "keywords": []
+}
