@@ -44,6 +44,16 @@ console.log('tests pass')
 ```
 
 
+## See also
+- [hybridify](https://github.com/hybridables/hybridify): Building hybrid APIs. You can use both callback and promise in same time.  Like… [more](https://github.com/hybridables/hybridify)
+- [is-missing](https://github.com/tunnckoCore/is-missing): Check that given `name` or `user/repo` exists in npm registry or in github as user… [more](https://github.com/tunnckoCore/is-missing)
+- [is-installed](https://github.com/tunnckoCore/is-installed): Checks that given package is installed on the system - globally or locally.
+- [is-promise](https://github.com/then/is-promise): Test whether an object looks like a promises-a+ promise
+- [is-generator](https://github.com/blakeembrey/is-generator): Check whether a value is a generator or generator function
+- [is-kindof](https://github.com/tunnckoCore/is-kindof): Thin wrapper around `kind-of` and in bonus functional api.
+- [thenify](https://github.com/thenables/thenify): Promisify a callback-based function
+
+
 ## Contributing
 
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/hybridables/is-hybrid/issues/new).
