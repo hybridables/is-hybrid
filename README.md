@@ -22,8 +22,8 @@ var gotHybrid = require('then-got')
 var isHybrid = require('is-hybrid')
 var assert = require('assert')
 
-var hybrid = gotHybrid('https://github.com')
-var promise = gotPromise('https://github.com')
+var hybrid = gotHybrid('http://www.tunnckocore.tk')
+var promise = gotPromise('http://www.tunnckocore.tk')
 
 assert(isHybrid(hybrid))
 assert(isPromise(hybrid))
@@ -55,7 +55,6 @@ console.log('tests pass')
 
 
 ## Contributing
-
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/hybridables/is-hybrid/issues/new).
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
@@ -106,5 +105,5 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [freenode-url]: http://webchat.freenode.net/?channels=charlike
 [freenode-img]: https://img.shields.io/badge/freenode-%23charlike-5654a4.svg
 
-[new-message-url]: https://github.com/tunnckoCore/messages
-[new-message-img]: https://img.shields.io/badge/send%20me-message-green.svg
+[new-message-url]: https://github.com/tunnckoCore/ama
+[new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg
