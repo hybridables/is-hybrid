@@ -10,15 +10,8 @@
 var isPromise = require('is-promise')
 
 module.exports = function isHybrid (obj) {
-  if (!obj || !obj.hybridify) {
-    return false
-  }
-  if (typeof obj.hybridify !== 'function') {
-    return false
-  }
-  if (!isPromise(obj)) {
-    return false
-  }
-
+  if (!obj || !obj.hybridify) return false
+  if (typeof obj.hybridify !== 'function') return false
+  if (!isPromise(obj)) return false
   return true
 }
