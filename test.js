@@ -14,7 +14,7 @@ var isHybrid = require('./index')
 var gotHybrid = require('then-got')
 var gotPromise = require('got-promise')
 
-var TEST_URL = 'http://requestb.in/sftqf2sf'
+var TEST_URL = 'http://www.tunnckocore.tk'
 
 test('is-hybrid:', function () {
   test('should return true for hybrids', function (done) {
